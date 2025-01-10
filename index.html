@@ -1,0 +1,193 @@
+<!--lenguaje y nodo de la version de html -->
+<!DOCTYPE html>
+<!--entrada o cuerpo de todo el contenido es=español -->
+<html lang="es">
+<!--elemnto donde se coloca metadatos, y pedir o dar informacion,agregar scripts o cargarlos.  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de javier parra,  descripcion de todos los proyectos desarrollados a lo largo de mi trayecto en la web">
+    
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="a4f9ee">
+
+    <title>Portafolio Javier Parra</title>
+    
+    <link rel="stylesheet" href="">
+
+    <link rel="icon" type="image/jpeg" href="images/yo.jpeg">
+
+    <!--
+    open grah todas las etiquetas que queramos introducir a la hora de hacer seo
+
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción breve de tu página" />
+    <meta property="og:image" content="URL_de_la_imagen_representativa" />
+    <meta property="og:url" content="URL_canonica_de_la_pagina" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nombre de tu sitio web" />
+    <meta property="og:locale" content="es_ES" />
+    -->
+</head>
+<!-- toda la estructura de la pagina esta se divide en Header-Main-Footer -->
+<body>
+
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+        
+        <p>Desarrollador apasionado por crear soluciones web💻 ​✅.</p>
+
+    <nav>
+        
+        <a href="#skills">Sobre mi?</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    </header>
+
+    <main>
+        
+     <section id="skills">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador frontend en formación, próximo a culminar la carrera de Ingeniería de Software.
+            Poseo sólidos conocimientos en <strong> HTML, CSS y JavaScript, </strong>  complementados con experiencia en frameworks y bibliotecas como React y Node.js, así como en PHP con Laravel.
+            Mi formación académica me ha permitido desarrollar habilidades analíticas y de resolución de problemas, y estoy comprometido con la creación de interfaces de usuario eficientes y atractivas.
+            Busco oportunidades para aplicar mis habilidades técnicas y creatividad en proyectos desafiantes que contribuyan al éxito de su empresa.
+        </p>
+    </section>
+
+    <section >
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>Lenguajes de Programación: HTML, CSS, JavaScript</li>
+            <li>Frameworks y Bibliotecas: React, Node.js, PHP, Laravel</li>
+            <li>Herramientas de Desarrollo: Git, npm, Jira, </li>
+            <li>Bases de Datos: MySQL, MongoDB</li>
+            <li>Metodologías Ágiles: Scrum</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Sitio Web para diferentes empresas</h3>
+                <p>Diseñé y desarrollé un sitio web responsivo utilizando HTML, CSS y JavaScript, mejorando la experiencia del usuario y la accesibilidad..</p>
+                
+            </div>
+            <div class="project-card">
+                <h3> Desarrollo de una Plataforma de Apuestas Deportivas </h3>
+                <p>Participé en la creación de un casino deportivo en línea que consumía una API para obtener datos de partidos en vivo y próximos a jugarse.
+                    Implementé un sistema completo de apuestas, permitiendo a los usuarios registrarse, iniciar sesión y realizar apuestas en tiempo real.
+                    El proyecto se desarrolló como una demo funcional, cumpliendo con los objetivos propuestos y demostrando la viabilidad de la idea central. </p>
+                <a  
+                    href="https://github.com/JavierparraDev/casino"
+                    target="_blank"
+                >Ver proyecto</a>
+            </div>
+            
+            <!--<div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver proyecto</a>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver proyecto</a>
+            </div>-->
+            
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/submit">
+            <fieldset>
+                <legend>Información Personal</legend>
+    
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </fieldset>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si te interesa trabajar conmigo o tienes una idea que quieres poner en marcha, no dudes en contactarme:</p>
+        <p><small>no existen <strong>Ideas Malas</strong>, solo ejecuciones mal planteadas</small></p>
+      
+        <ul>
+            <li>Email: 
+                <a href="mailto:javier00parra@gmail.com"
+                target="_blank"
+                
+                >javier00parra@gmail.com
+            </a></li>
+            <li>Teléfono: 
+                <a 
+                class="fab fa-whatsapp" 
+                href="https://wa.me/573133217887/?text=Hola,%20he%20visto%20tu%20portafolio%20y%20me%20gustaria%20una%20conocer%20mas%20del%20tema:" 
+                target="_blank"
+                rel="noreferrer"
+                >Whatsapp
+            </a></li>
+            
+            <li>LinkedIn: 
+                <a   
+                href="https://linkedin.com/in/JavierparraDev"
+                target="_blank"
+                rel="noreferrer"
+                >linkedin.com/in/JavierparraDev
+            </a></li>
+            <li>Github
+                 <a 
+                 href="https://github.com/JavierparraDev"
+                 target="_blank"
+                 rel="noreferrer"
+                 >github.com/JavierparraDev
+                </a></li>
+        </ul>
+    </section>
+   
+    <dialog id="dialog">
+        <h1>si lo imaginas lo podemos diseñar</h1>
+        <p>contamos con gran entuasiasmo en plantar tus sueños</p>
+        <button id="hide">cerrar modal</button>
+    </dialog>
+    <button id="show">sueños</button>
+    <!--los scripst se pueden colocar en cualquier parte del html,(utilizar id crean event)-->
+    
+    <script>
+        document.getElementById('show').addEventListener('click', () => {
+            document.getElementById('dialog').showModal();
+        });
+        
+        document.getElementById('hide').addEventListener('click', () => {
+            document.getElementById('dialog').close();
+        });
+    </script>
+
+
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 JavierparraDev. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+
+
+
+</html>
