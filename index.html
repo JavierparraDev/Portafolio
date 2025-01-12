@@ -13,7 +13,7 @@
 
     <title>Portafolio Javier Parra</title>
     
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/style.css">
 
     <link rel="icon" type="image/jpeg" href="images/yo.jpeg">
 
@@ -31,11 +31,11 @@
 </head>
 <!-- toda la estructura de la pagina esta se divide en Header-Main-Footer -->
 <body>
-
+   
     <header>
         <h1>Bienvenido a mi Portafolio</h1>
         
-        <p>Desarrollador apasionado por crear soluciones web💻 ​✅.</p>
+        <p>Desarrollador apasionado por crear soluciones web 💻 ​✅.</p>
 
     <nav>
         
@@ -48,14 +48,37 @@
 
     <main>
         
-     <section id="skills">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador frontend en formación, próximo a culminar la carrera de Ingeniería de Software.
-            Poseo sólidos conocimientos en <strong> HTML, CSS y JavaScript, </strong>  complementados con experiencia en frameworks y bibliotecas como React y Node.js, así como en PHP con Laravel.
-            Mi formación académica me ha permitido desarrollar habilidades analíticas y de resolución de problemas, y estoy comprometido con la creación de interfaces de usuario eficientes y atractivas.
-            Busco oportunidades para aplicar mis habilidades técnicas y creatividad en proyectos desafiantes que contribuyan al éxito de su empresa.
-        </p>
-    </section>
+        <section id="skills">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy desarrollador frontend con metas de ser fullstack y estoy próximo a culminar la carrera de Ingeniería de Software.
+                Poseo sólidos conocimientos en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>, complementados con experiencia en frameworks y bibliotecas como <strong>React</strong> y <strong>Node.js</strong>, así como en <strong>PHP</strong> con <strong>Laravel</strong>.
+                Mi formación académica me ha permitido desarrollar habilidades analíticas y de resolución de problemas, buscando un enfoque práctico y efectivo para solucionar inconvenientes.
+                Busco oportunidades para aplicar mis habilidades técnicas y creatividad en proyectos desafiantes que contribuyan al éxito de tus ideas.
+            </p>
+            
+            <p>Si deseas contactarme, puedes hacerlo a través de mi correo electrónico:
+                <a href="mailto:javier00parra@gmail.com" target="_blank" id="email-link">javier00parra@gmail.com</a>
+                <button id="copy-email" title="Copiar correo" aria-label="Copiar correo electrónico">📋 Copiar</button>
+            </p>
+            
+            <p>Revisa mi CV:</p>
+            <button id="cv"aria-label="descargar curriculun">Descargar CV</button>
+        </section>
+        
+        <script>
+            document.getElementById('copy-email').addEventListener('click', () => {
+                const email = "javier00parra@gmail.com";
+                navigator.clipboard.writeText(email)
+                    .then(() => {
+                        alert("Correo copiado al portapapeles: " + email);
+                    })
+                    .catch(err => {
+                        console.error("Error al copiar el correo:", err);
+                    });
+            });
+        </script>
+        
 
     <section >
         <h2>Habilidades Técnicas</h2>
@@ -106,15 +129,17 @@
         <form method="post" action="/submit">
             <fieldset>
                 <legend>Información Personal</legend>
-    
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+                
+                <label for="Teléfono">telefono:</label>
+                <input type="tel" id="tel" name="telefono"  required>
             </fieldset>
     
             <button type="submit">Enviar</button>
@@ -158,11 +183,17 @@
                 </a></li>
         </ul>
     </section>
-   
+   <!--modal basico-->
     <dialog id="dialog">
         <h1>si lo imaginas lo podemos diseñar</h1>
         <p>contamos con gran entuasiasmo en plantar tus sueños</p>
-        <button id="hide">cerrar modal</button>
+        <button id="hide">cerrar</button>
+        <button id="whatsapp">
+            <a href="https://wa.me/573133217887/?text=Hola,%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios"
+               target="_blank" rel="noopener noreferrer">
+                Contactar por WhatsApp
+            </a>
+        </button>
     </dialog>
     <button id="show">sueños</button>
     <!--los scripst se pueden colocar en cualquier parte del html,(utilizar id crean event)-->
@@ -182,12 +213,12 @@
 
     </main>
     
-    <footer>
-        <p>&copy; 2025 JavierparraDev. Todos los derechos reservados.</p>
-    </footer>
+    
 </body>
 
-
+<!--<footer>
+        <p>&copy; 2025 JavierparraDev. Todos los derechos reservados.</p>
+    </footer> -->
 
 
 </html>
